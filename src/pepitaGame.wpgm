@@ -11,9 +11,6 @@ program PepitaGame {
 	game.height(10)
 	game.width(10)
 	game.ground("suelo.png")
-	
-//	COLISIONES
-	game.whenCollideDo (roque, {algo => algo.teEncontro(roque)})
 
 //	VISUALES
 	game.addVisualIn(alpiste, game.at(5,5))
@@ -22,6 +19,9 @@ program PepitaGame {
 	game.addVisual(villaGesell)
 	game.addVisual(pepita)
 	game.addVisualCharacter(roque)
+
+//	COLISIONES
+	game.whenCollideDo (roque, {algo => algo.teEncontro(roque)})
 
 //	TECLADO
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
