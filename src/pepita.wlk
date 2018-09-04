@@ -19,7 +19,6 @@ object pepita {
 				ciudad = unaCiudad
 			}
 			else {game.say(self, "Dame de comer primero!")}
-			}
 		}
 	}
 	method teEncontro (alguien) {
